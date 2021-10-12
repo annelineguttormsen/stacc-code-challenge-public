@@ -10,21 +10,43 @@ KYC eller “know your customer” er virkemidler som sikrer at et finansforetak
 ## Kodeoppgave 📝
 Årets kodeoppgave er en åpen oppgave relatert til KYC. Det er opp til dere hvilken teknologi dere bruker til oppgaven og hvordan den løses. Det er dermed mulig å løse den uavhengig av om du foretrekker backend, frontend eller hele stacken. Lag en enkel webapp eller et API, som kan utføre en eller annen form for KYC-sjekk av en person.
 
-Minimums kravet til oppgaven er at du får utført en PEP sjekk av en potensiell kunde sitt navn. Dette har vi laget et API for i forbindelse med oppgaven. Oppgaven kan tolkes bredt, og vi oppfordrer deg til å være kreativ i din besvarelse. Vi foreslår to utgangspunkt til oppgaven i avsnittet under. Du velger selv om du vil gjøre a), b) eller begge deler:
+*Se avsnittet som omtaler formelle krav for **minimumskravet**.*
+ 
 
 ### Forslag til oppgaver
-a) Lag en enkel webapp som lar brukeren utføre en PEP sjekk av én person.
-  * En mulig utvidelse av oppgaven kan være å legge til funksjonalitet for å utføre en PEP sjekk av alle personene i et selskap via `/roller` endepunktet i APIet vårt.
-  * Du velger selv om du vil benytte deg av vårt API eller eksempel dataen som er vedlagt.
+Vi presiserer at kandidater står fritt til å utforkse problemstillingen slik de selv ønsker(etter minimumskravet).
+> Hvis du er tryggest på front-end og ikke ønsker å knote med et eget API så er dette ikke noe problem.   
+> Kanskje back-end er mer din greie? Bruk heller mesteparten av tiden din her.  
 
-b) Implementer ditt eget KYC API som returnerer treff på enkeltpersoner og/eller selskap.
+*Du velger fritt hvilke oppgave du vil gjøre. men oppfordres til å gi et forsøk på begge.*
+  
 
-  * Du finner mange nyttige datasets i tilleg til PEP listen på opensanctions.com/datasets som kan være av interesse i forbindelse med å lage et eget API.
-  * Mulig utvidelse av oppgave b) er å tilgjengeliggjøre API’et du lager via HTTP.
-## Stacc PEP API
-I forbindelse med kodeoppgaven har vi snekret sammen et simpelt API, med to endepunkt: `/pep` og `/roller`. Spørringer mot APIet utføres ved HTTP metoden POST, hvor payload er på JSON format.
+**a) Lag en enkel webapp som lar brukeren utføre en KYC-sjekk av én person.**
 
-Requests finner du her:  
+**b) Implementer ditt eget KYC API som returnerer treff på enkeltpersoner og/eller selskap.**
+
+**Utvidelser:**  
+ - Publiser app og/eller API slik at de er tilgjengelig via HTTP
+  > Kan f.eks publiseres til azure, google cloud, heroku, eller kanskje din egen server? 
+ - 
+  
+## Stacc KYC API
+
+**Du velger selv om du vil benytte deg av vårt API eller eksempel dataen som er vedlagt.**
+ - se tilhørende .csv filer i repo
+
+I forbindelse med kodeoppgaven har vi laget et simpelt API(express.js API), med noen få endepunkter. Her kan du hente data fra brønnøysundregisteret og open sanctions.
+
+API tilgjengelig på https://stacc-code-challenge-2021.azurewebsites.net
+> Merk at alle requests går via /api 
+> *Root path* ruter tilbake til dette repoet
+
+Alle requests er dokumentert i postman(response schema kan du hente ved å utføre request selv):   
+
+**Les** dokumentasjon  
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/9949536/UV5TEzGZ#a9e4e976-c338-48b3-919b-3eb492693802)
+
+**Fork** collection her  
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9949536-5ea0a799-10d7-4eb7-b4ca-8042fee1e741?action=collection%2Ffork&collection-url=entityId%3D9949536-5ea0a799-10d7-4eb7-b4ca-8042fee1e741%26entityType%3Dcollection%26workspaceId%3D22a3a0b5-894d-4317-bf05-a9d750e65244)
 
 ### Formelle krav
