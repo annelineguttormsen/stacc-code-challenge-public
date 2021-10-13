@@ -37,9 +37,11 @@ I forbindelse med kodeoppgaven har vi laget et simpelt API (express.js), med noe
 API'et er tilgjengelig på:
 * https://stacc-code-challenge-2021.azurewebsites.net
 > Merk at alle requests går via /api
+
+
 > */docs* ruter tilbake til dette repoet
 
-> Alle API spørringer er dokumentert i postman.
+> Alle API spørringer er dokumentert i [postman](https://www.postman.com/).
 
 #
 
