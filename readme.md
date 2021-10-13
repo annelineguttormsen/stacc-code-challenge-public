@@ -61,7 +61,7 @@ API'et er tilgjengelig på:
 2. Oppgaven må publiseres på github (gjerne i et *public* repositorium)
    * Vi oppfordrer kandidater til å bruke **git** slik at vi sammen kan se igjennom commits og historikk.
    * Om du ønsker å holde denne privat så må du invitere Ari og Herman slik at de kan lese repo, kontakt informasjonen vår finner du lenger nede.
-3. Alle oppgaver må inneholde en *readme.md* fil som beskriver prosjektet i korte trekk. Følg [denne linken for mal.](https://github.com/hpl002/stacc-code-challege/blob/master/readmeTemplate.md)
+3. Alle oppgaver må inneholde en *readme.md* fil som beskriver prosjektet i korte trekk. Følg [denne linken for mal.](https://github.com/hpl002/stacc-code-challenge-public/blob/master/readmeTemplate.md)
    * Her dokumenterer og kommenterer du smått underveis. Spesielt viktig at det medfølger gode instrukser som beskriver hvordan prosjektet kjøres lokalt.
 *Husk at dette ikke bare skal kjøre på din egen maskin!*
 
