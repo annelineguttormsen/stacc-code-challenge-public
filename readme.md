@@ -10,26 +10,22 @@ KYC eller “know your customer” er virkemidler som sikrer at et finansforetak
 
 *Se avsnittet som omtaler 'krav for innlevering' for **minimumskravet**.*
 
-#
-## Oppgaver
+
+## Forslag til oppgaver:
 **a) Lag en enkel webapp som lar brukeren utføre en KYC-sjekk av én person.**
 
 **b) Implementer ditt eget KYC API som returnerer treff på enkeltpersoner og/eller selskap.**
 * *Du velger fritt hvilken oppgave du vil gjøre. men oppfordres til å gi et forsøk på begge.*
-#
+# 
 Vi presiserer at kandidater står fritt til å utforske problemstillingen slik de selv ønsker (etter minimumskravet)
 > Hvis du er tryggest på front-end og ikke ønsker å knote med et eget API så er dette ikke noe problem.
 > Kanskje back-end er mer din greie? Bruk heller mesteparten av tiden din her.
 
-
-
-
-
 **Mulige Utvidelser av a) og b)**
  - Publiser webapp og/eller API slik at de er tilgjengelig via HTTP
-  > Kan f.eks publiseres til azure, google cloud, heroku, surge eller kanskje din egen server?
+   - Kan f.eks publiseres til azure, google cloud, heroku, surge eller kanskje din egen server?
  - Utvide KYC/PEP sjekken til å sjekke alle personer i et foretak istedenfor bare én person.
-  > Visualisere sjekken på en kreativ og oversiktelig måte?
+   - Visualisere sjekken på en kreativ og oversiktelig måte?
 
 # Stacc KYC API / Data
 I forbindelse med kodeoppgaven har vi laget et simpelt API (express.js), med noen få endepunkter som kan hjelpe deg med å komme i gang med oppgaven. Her kan du hente data fra [brønnøysundregisteret](https://www.brreg.no/) og [open sanctions](http://opensanctions.com/) som du kan benytte deg av for å utføre en PEP sjekk av personer og selskap.
