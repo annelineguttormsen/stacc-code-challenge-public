@@ -6,7 +6,8 @@ Her kan beskrive hvikle oppgave(r) du har valgt å løse.
 
 ## Hvordan kjøre prosjektet
 For eksempel ***yarn start***
-> Husk å pakke med alle avhengigheter
+> Husk å pakke med alle avhengigheter.
 
 ## Kommentarer
-Noen store valg du øsnker å beskrive/forsvare?
+Noen spesielle valg du ønsker å beskrive/forsvare?
+> Eventuellt andre kommentarer / utfordringer?
