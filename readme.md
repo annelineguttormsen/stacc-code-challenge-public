@@ -42,7 +42,7 @@ I forbindelse med kodeoppgaven har vi laget et simpelt API(express.js API), med 
 
 API tilgjengelig på https://stacc-code-challenge-2021.azurewebsites.net
 > Merk at alle requests går via /api
-> *Root path* ruter tilbake til dette repoet
+> */docs* ruter tilbake til dette repoet
 
 Alle requests er dokumentert i postman(response schema kan du hente ved å utføre request selv):
 
