@@ -6,7 +6,8 @@ KYC eller “know your customer” er virkemidler som sikrer at et finansforetak
 
 
 ## Kodeoppgave 📝
-Årets kodeoppgave er en åpen oppgave relatert til KYC. Det er opp til dere hvilken teknologi dere bruker til oppgaven og hvordan den løses. Det er dermed mulig å løse den uavhengig av om du foretrekker backend, frontend eller hele stacken. Lag en enkel webapp eller et API, som kan utføre en eller annen form for KYC-sjekk av en person.
+Årets kodeoppgave er en åpen oppgave relatert til KYC. Det er opp til dere hvilken teknologi dere bruker til oppgaven og hvordan den løses. Det er dermed mulig å løse den uavhengig av om du foretrekker backend, frontend eller hele stacken.
+Det viktigste er at dere lager en applikasjon eller et API som gjør det mulig å utføre KYC sjekker av enkelt individer og/eller personer i et selskap.
 
 *Se avsnittet som omtaler 'krav for innlevering' for **minimumskravet**.*
 
@@ -36,12 +37,9 @@ I forbindelse med kodeoppgaven har vi laget et simpelt API (express.js), med noe
 #
 API'et er tilgjengelig på:
 * https://stacc-code-challenge-2021.azurewebsites.net
-> Merk at alle requests går via /api
-
-
-> */docs* ruter tilbake til dette repoet
-
-> Alle API spørringer er dokumentert i [postman](https://www.postman.com/).
+  * Merk at alle requests går via `/api`
+  * `/docs` ruter tilbake til dette repoet
+  *  Alle API spørringer er dokumentert i [postman](https://www.postman.com/).
 
 #
 
