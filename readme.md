@@ -57,16 +57,14 @@ Alle requests er dokumentert i postman(response schema kan du hente ved å utfø
 2. Oppgaven må publiseres på github(gjerne *public*)
    1. Om du ønsker å holde denne privat så må du invitere Ari og Herman slik at de kan lese repo, kontakt informasjonen vår finner du lenger nede.
 > Vi oppfordrer kandidater til å bruke **git** slik at vi sammen kan se igjennom commits og historikk.
-3. ** Alle oppgaver må inneholde en *readme.md* fil som beskriver prosjektet i korte trekk. Følg [denne linken for mal.](https://github.com/hpl002/stacc-code-challege/blob/master/readmeTemplate.md)
+3. Alle oppgaver må inneholde en *readme.md* fil som beskriver prosjektet i korte trekk. Følg [denne linken for mal.](https://github.com/hpl002/stacc-code-challege/blob/master/readmeTemplate.md)
 >  Her dokumenterer og kommenterer du smått underveis. Spesielt viktig at det medfølger instrukser som beskriver hvordan prosjektet kjøres.
 *Husk at dette ikke bare skal kjøre på din egen maskin!*
 
- 
+
 # Lykke til! ✌️
 
-Vi har opprettet en egen Slack kanal for spørsmål relatert til oppgaven, ikke nøl med å skrive til oss skulle noe være uklart. 
-
-Spørsmål angående oppgaven kan sendes til Ari eller Herman via slack eller direkte på e-post:
+Vi har opprettet en egen Slack kanal for spørsmål relatert til oppgaven, ikke nøl med å skrive til oss skulle noe være uklart. Spørsmål angående oppgaven kan sendes til Ari eller Herman via slack eller direkte på e-post:
 
 ## Slack Kanal
 
