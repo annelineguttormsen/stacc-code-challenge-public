@@ -1,7 +1,7 @@
 # Stacc code challenge 2021
 
 ## Oppgavebeskrivelse
-Her kan beskrive hvikle oppgave(r) du har valgt å løse.
+Her kan beskrive hvilke oppgave(r) du har valgt å løse.
 > Bekriv prosjektet ditt kort.
 
 ## Hvordan kjøre prosjektet
