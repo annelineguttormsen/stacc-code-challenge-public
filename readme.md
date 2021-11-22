@@ -67,7 +67,7 @@ Vi har opprettet en egen Slack kanal for spørsmål relatert til oppgaven, ikke 
 
 ## Slack Kanal
 
-[![Joing us on Slack](https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/add-to-slack-button.png?auto=format&q=60&fit=max&w=930)](https://join.slack.com/share/zt-x1qfqjc3-10rZlZDDvJVb_9i8Q2FCiA)
+[![Joing us on Slack](https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/add-to-slack-button.png?auto=format&q=60&fit=max&w=930)](https://join.slack.com/share/enQtMjc3ODk3NjAyNzE4NC00YmFmZjk3MzAwMTYzZGM1MjcyN2JiYjA4MDMzNDFiOGEzNjYxYjA1MWRjMDlhODkxNmVmN2YwMGFhNjRiNWYy)
 
 ## E-post 📬
 * ariens@stacc.com
