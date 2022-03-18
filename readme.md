@@ -1,7 +1,7 @@
 ![[Joing us on Slack](https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/add-to-slack-button.png?auto=format&q=60&fit=max&w=930)](https://media-exp1.licdn.com/dms/image/C4D0BAQEJziJobYtFyQ/company-logo_200_200/0/1625126662709?e=2159024400&v=beta&t=yAgccdM6O3UYZg-Eoqux-e2t_D8_kRCMj4oeUkr9-qc)
 
 
-# Stacc Code Challenge 2021: Know Your Customer
+# Stacc Code Challenge: Know Your Customer
 KYC eller “know your customer” er virkemidler som sikrer at et finansforetak vet nok om sine kunder til å forhindre og avdekke om det finansielle systemet brukes til ulovlig virksomhet, som hvitvasking, korrupsjon og terrorfinansiering. Et av disse virkemidlene er å utføre en PEP-sjekk (Politically Exposed Person) av kunder. En politisk eksponert person har generelt sett større risiko for korrupsjon og bestikkelser knyttet til seg, og vil dermed være flagget for manuell behandling i f.eks en lånesøknad hos en bank.
 
 
