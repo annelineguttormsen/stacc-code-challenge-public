@@ -42,13 +42,14 @@ API'et er tilgjengelig på: https://stacc-code-challenge-2021.azurewebsites.net
 
 
 
-**Les**: Dokumentasjon om API og endepunkter
+**Les**: Oversikt over ulike endepunkt i API'et vårt
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/9949536/UV5TEzGZ#a9e4e976-c338-48b3-919b-3eb492693802)
+[![Run in Postman](https://www.postman.com/stacc-flow/workspace/code-challenge/request/16040688-643a496f-efb2-439a-903a-1bacfd29af1e)
 
 **Fork**: Importer eksempel spørringer i postman
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9949536-5ea0a799-10d7-4eb7-b4ca-8042fee1e741?action=collection%2Ffork&collection-url=entityId%3D9949536-5ea0a799-10d7-4eb7-b4ca-8042fee1e741%26entityType%3Dcollection%26workspaceId%3D22a3a0b5-894d-4317-bf05-a9d750e65244)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/16040688-74d4dc53-b65b-457c-8865-b5c4d6d4fdc5?action=collection%2Ffork&collection-url=entityId%3D16040688-74d4dc53-b65b-457c-8865-b5c4d6d4fdc5%26entityType%3Dcollection%26workspaceId%3Df408e47c-588c-4301-ba9f-6838a7f3b57a)
+
 #
 ## Krav til innlevering:
 1. Oppgaven må i det minste kunne utføre en enkel PEP sjekk av én person (enten via en app eller et API).
