@@ -41,7 +41,7 @@ API'et er tilgjengelig på: https://code-challenge.stacc.dev/
 #
 
 
-**Fork**: Vi har laget en postman-collection, med oversikt over ulike API endepunkter som kan benyttes for å løse ulike oppgaver:
+**Eksempel Spørringer / Postman Collection**: Vi har laget en postman-collection, med oversikt over ulike API endepunkter som kan benyttes for å løse ulike oppgaver. Vi anbefaler deg å "forke" samlingen slik at du kan teste ut API'et og hente ut ulike data.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/16040688-74d4dc53-b65b-457c-8865-b5c4d6d4fdc5?action=collection%2Ffork&collection-url=entityId%3D16040688-74d4dc53-b65b-457c-8865-b5c4d6d4fdc5%26entityType%3Dcollection%26workspaceId%3Df408e47c-588c-4301-ba9f-6838a7f3b57a)
 
