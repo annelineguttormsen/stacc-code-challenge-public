@@ -34,19 +34,14 @@ I forbindelse med kodeoppgaven har vi laget et enkelt API (express.js), med noen
 * Her kan du hente data fra [brønnøysundregisteret](https://www.brreg.no/) og [open sanctions](http://opensanctions.com/) som du kan benytte deg av for å utføre en PEP sjekk av personer og selskap.
 * Du velger helt selv om du vil konsumere vårt API, eller benytte deg av vedlagt test data ([pep.csv](https://raw.githubusercontent.com/hpl002/stacc-code-challenge-public/master/pep.csv)) i repo for å utføre PEP sjekken.
 
-API'et er tilgjengelig på: https://stacc-code-challenge-2021.azurewebsites.net
+API'et er tilgjengelig på: https://code-challenge.stacc.dev/
   * Merk at alle requests går via `/api`
   * `/docs` ruter tilbake til dette repoet
   *  Alle API spørringer er dokumentert i [postman](https://www.postman.com/).
 #
 
 
-
-**Les**: Oversikt over ulike endepunkt i API'et vårt
-
-[![Run in Postman](https://www.postman.com/stacc-flow/workspace/code-challenge/request/16040688-643a496f-efb2-439a-903a-1bacfd29af1e)
-
-**Fork**: Importer eksempel spørringer i postman
+**Fork**: Vi har laget en postman-collection, med oversikt over ulike API endepunkter som kan benyttes for å løse ulike oppgaver:
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/16040688-74d4dc53-b65b-457c-8865-b5c4d6d4fdc5?action=collection%2Ffork&collection-url=entityId%3D16040688-74d4dc53-b65b-457c-8865-b5c4d6d4fdc5%26entityType%3Dcollection%26workspaceId%3Df408e47c-588c-4301-ba9f-6838a7f3b57a)
 
