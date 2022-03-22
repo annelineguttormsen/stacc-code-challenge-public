@@ -55,6 +55,7 @@ API'et er tilgjengelig på: https://code-challenge.stacc.dev/
 3. Alle oppgaver må inneholde en *readme.md* fil som beskriver prosjektet i korte trekk. Følg [denne linken for mal.](https://github.com/hpl002/stacc-code-challenge-public/blob/master/readmeTemplate.md)
    * Her dokumenterer og kommenterer du smått underveis. Spesielt viktig at det medfølger gode instrukser som beskriver hvordan prosjektet kjøres lokalt.
 *Husk at dette ikke bare skal kjøre på din egen maskin!*
+4. **Innleveringer sendes inn til Trond:  tronds@stacc.com**
 
 
 # Lykke til! ✌️
@@ -65,7 +66,9 @@ Vi har opprettet en egen Slack kanal for spørsmål relatert til oppgaven, ikke 
 
 [![Joing us on Slack](https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/add-to-slack-button.png?auto=format&q=60&fit=max&w=930)](https://join.slack.com/share/enQtMjc3ODk3NjAyNzE4NC00YmFmZjk3MzAwMTYzZGM1MjcyN2JiYjA4MDMzNDFiOGEzNjYxYjA1MWRjMDlhODkxNmVmN2YwMGFhNjRiNWYy)
 
-## E-post 📬
+## E-post 📬 
+Spørsmål om oppgaven sendes hit:
 * ariens@stacc.com
-
 * hermanp@stacc.com
+
+
