@@ -57,6 +57,7 @@ API'et er tilgjengelig på: https://code-challenge.stacc.dev/
 *Husk at dette ikke bare skal kjøre på din egen maskin!*
 4. **Innleveringer sendes inn til samme person som sendte deg oppgaven**  
    **Enten link til offentlig repo eller .zip**
+ - Vi foretrekker og anbefaler link til offentlig repo
 
 
 # Lykke til! ✌️
