@@ -1,23 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="layout">
+    <router-view/>
+  </div>
 </template>
 
 <style lang="scss">
-  * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  html {
-    font-size: 16px;
-  }
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+  @import "@/assets/scss/_main.scss";
+
+  .layout {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 5rem 1rem 1rem;
   }
 </style>
