@@ -14,9 +14,44 @@ html {
 h1 {
     font-size: 2.5rem;
     margin: 1.5rem 0;
+    line-height:1.2;
 }
 p {
     font-size: 1rem;
     margin: 1rem 0;
+    line-height:1.5;
+}
+table {
+    border: 0;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    //if the table was to ever overflow for some reason
+    //there will at least be a scrollbar
+    overflow-x: auto;
+    width: 100%;
+}
+thead {
+    border: 0;
+    font-weight: 600;
+    background-color: var(--light-gray-color);
+}
+tbody {
+    border: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    tr {
+        border-top: 1px solid var(--gray-color);
+    }
+}
+tr {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+th, td {
+    padding: 0.5rem 0.7rem;
+    flex: 1;
 }
 @import 'variables'
