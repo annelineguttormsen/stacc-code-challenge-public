@@ -4,21 +4,19 @@
   import SearchResults from './components/SearchResults.vue'
   import InfoAlert from "@/components/Alert/InfoAlert.vue"
 
+  import { fetchOpenSanctions } from "./FrontPage.util.js"
+
   const searchValue = ref('')
-  const results = ref([
-    {
-      caption: "Ola Nordmann",
-      role: "Swedish politician" 
-    },
-    {
-      caption: "Helge Helgesen",
-      role: "Politician"
-    }
-  ])
+  const finalSearchValue = ref('')
+  const results = ref({})
   const isLoading = ref(false)
 
   async function searchName(query) {
-    console.log("searchname function call", query)
+    const response = await fetchOpenSanctions(query)
+    results.value = response.data
+    finalSearchValue.value = query
+    isLoading.value = false
+    // console.log(results.value.data.value)
   }
 </script>
 
@@ -29,6 +27,10 @@
       class="search__form"
       @submit.prevent="searchName(searchValue);isLoading = !isLoading"
     >
+      <!-- 
+        searchvalue should be updated on input
+        instead of change, that's why v-model is not used
+      -->
       <SearchInput
         :value="searchValue"
         @input="searchValue = $event.target.value"
@@ -41,8 +43,9 @@
       </button>
     </form>
     <SearchResults
-      :isLoading="false"
+      :isLoading="isLoading"
       :results="results"
+      :query="finalSearchValue"
     />
     <InfoAlert>
       PEP, også kjent som <i>politically exposed person</i>, er en politisk eksponert person har generelt sett større risiko for korrupsjon og bestikkelser knyttet til seg, og vil dermed være flagget for manuell behandling i f.eks en lånesøknad hos en bank.
@@ -62,6 +65,7 @@
     &__form {
       display: flex;
       gap: 0.5rem;
+      max-width: 600px;
       width: 100%;
     }
     &__button {
@@ -79,8 +83,12 @@
       &:hover {
         background-color: var(--main-color-dark);
       }
+      &:focus {
+        outline: 3px solid lightblue;
+      }
       &:active {
         background-color: var(--main-color-darkest);
+        outline: none;
       }
     }
   }

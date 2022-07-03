@@ -1,14 +1,14 @@
 <template>
-  <div class="layout">
+  <main class="layout">
     <router-view/>
-  </div>
+  </main>
 </template>
 
 <style lang="scss">
   @import "@/assets/scss/_main.scss";
 
   .layout {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 5rem 1rem 1rem;
   }

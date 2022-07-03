@@ -15,16 +15,19 @@ h1 {
     font-size: 2.5rem;
     margin: 1.5rem 0;
     line-height: 1.2;
+    word-break: break-word;
 }
 h2 {
     font-size: 1.5rem;
     margin: 1.2rem 0;
     line-height: 1.2;
+    word-break: break-word;
 }
 p {
     font-size: 1rem;
     margin: 1rem 0;
     line-height: 1.5;
+    word-break: break-word;
 }
 table {
     border: 0;
@@ -66,10 +69,13 @@ th, td {
     }
     tbody tr {
         flex-flow: column nowrap;
+        &:nth-child(odd) {
+            background-color: var(--light-gray-color);
+        }
     }
     td {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
         &::before {
             content: attr(data-th);
             display: inline-block;

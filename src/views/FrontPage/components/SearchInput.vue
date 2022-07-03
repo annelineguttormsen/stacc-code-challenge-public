@@ -14,7 +14,7 @@
     display: block;
     width: 100%;
     border: 1px solid var(--gray-color);
-    padding: .7rem 1.75rem .7rem 1rem;
+    padding: .7rem 2.25rem .7rem 1rem;
     font-size: 1.2rem;
     line-height: 1.5;
     //frontpage sets text-align center
