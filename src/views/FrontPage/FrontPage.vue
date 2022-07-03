@@ -1,10 +1,15 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
+  import { useRouter, useRoute } from 'vue-router'
+  import { ref, watch, onMounted } from 'vue'
+  
   import SearchInput from './components/SearchInput.vue'
   import SearchResults from './components/SearchResults.vue'
   import InfoAlert from "@/components/Alert/InfoAlert.vue"
 
   import { fetchOpenSanctions } from "./FrontPage.util.js"
+
+  const router = useRouter()
+  const route = useRoute()
 
   const searchValue = ref('')
   const finalSearchValue = ref('')
@@ -12,12 +17,32 @@
   const isLoading = ref(false)
 
   async function searchName(query) {
+    router.push({
+      query: {
+        search: query,
+      }
+    })
+    isLoading.value = true
     const response = await fetchOpenSanctions(query)
     results.value = response.data
     finalSearchValue.value = query
     isLoading.value = false
-    // console.log(results.value.data.value)
   }
+
+  onMounted(() => {
+    if (route.query.search) {
+      searchValue.value = route.query.search
+      searchName(searchValue.value)
+    }
+  })
+
+  watch(
+    () => route.query.search,
+    async newSearch => {
+      searchValue.value = newSearch
+      searchName(searchValue.value)
+    }
+  )
 </script>
 
 <template>
@@ -42,7 +67,14 @@
         Search
       </button>
     </form>
+    <p 
+      v-if="!route.query.search"
+      class="search__results--empty"
+    >
+      No search done yet
+    </p>
     <SearchResults
+      v-else
       :isLoading="isLoading"
       :results="results"
       :query="finalSearchValue"
@@ -89,6 +121,15 @@
       &:active {
         background-color: var(--main-color-darkest);
         outline: none;
+      }
+    }
+    &__results {
+      &--empty {
+        border: 1px solid var(--gray-color);
+        width:100%;
+        padding: 1rem;
+        margin: 0;
+        color: var(--gray-color);
       }
     }
   }
