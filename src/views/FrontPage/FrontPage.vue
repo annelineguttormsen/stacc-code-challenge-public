@@ -22,7 +22,7 @@
 
 <template>
   <div class="search">
-    <h1 class="search__title">Politically Exposed Person sjekk</h1>
+    <h1 class="search__title">Politically Exposed Person check</h1>
     <form 
       class="search__form"
       @submit.prevent="searchName(searchValue);isLoading = !isLoading"
@@ -39,7 +39,7 @@
         class="search__button"
         type="submit"
       >
-        Søk
+        Search
       </button>
     </form>
     <SearchResults
@@ -48,7 +48,7 @@
       :query="finalSearchValue"
     />
     <InfoAlert>
-      PEP, også kjent som <i>politically exposed person</i>, er en politisk eksponert person har generelt sett større risiko for korrupsjon og bestikkelser knyttet til seg, og vil dermed være flagget for manuell behandling i f.eks en lånesøknad hos en bank.
+      PEP is the shorthand term for <i>politically exposed person</i> and is a person who is at a greater risk of corruption and/or being bribed. Because of this, customers who are flagged as <i>PEP</i> will be manually handled when it comes to something like setting up a loan with a bank.
     </InfoAlert>
   </div>
 </template>

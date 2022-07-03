@@ -24,17 +24,17 @@
     <InputDangerAlert 
       v-if="results.length == 0 && !isLoading"
     >
-      {{ `Fant ingenting som matchet '${query}'` }}
+      {{ `Couldn't find anything mathing '${query}'` }}
     </InputDangerAlert>
     <div v-else-if="results.length != 0 && !isLoading">
-      <h2>{{ `Søkeresultater for ${query}` }}</h2>
+      <h2>{{ `Search results for '${query}'` }}</h2>
       <table>
         <thead>
           <tr>
-            <th class="tablecell--bigger">Navn</th>
+            <th class="tablecell--bigger">Name</th>
             <th>Type</th>
-            <th class="tablecell--bigger">Rolle</th>
-            <th>Land</th>
+            <th class="tablecell--bigger">Position</th>
+            <th>Country</th>
           </tr>
         </thead>
         <tbody>
@@ -43,7 +43,7 @@
             :key="result.id"
           >
             <td 
-              data-th="Navn"
+              data-th="Name"
               class="tablecell--bigger"
             >
               {{ result.caption ?? '' }}
@@ -54,7 +54,7 @@
               {{ result.schema }}
             </td>
             <td 
-              data-th="Rolle"
+              data-th="Position"
               class="tablecell--bigger"
             >
               <div>
@@ -66,7 +66,7 @@
                 </p>
               </div>
             </td>
-            <td data-th="Land">
+            <td data-th="Country">
               <div>
                 <p
                   v-for="(country, index) in result.properties.country"

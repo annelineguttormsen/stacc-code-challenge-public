@@ -1,7 +1,7 @@
 <template>
   <input
     type="text"
-    placeholder="Ola Nordmann"
+    placeholder="Person, company, etc."
     autocomplete="off"
   />
 </template>
