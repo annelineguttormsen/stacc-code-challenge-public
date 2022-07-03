@@ -24,9 +24,12 @@
     <InputDangerAlert 
       v-if="results.length == 0 && !isLoading"
     >
-      {{ `Couldn't find anything mathing '${query}'` }}
+      {{ `Couldn't find anything matching '${query}'` }}
     </InputDangerAlert>
-    <div v-else-if="results.length != 0 && !isLoading">
+    <div 
+      v-else-if="results.length != 0 && !isLoading"
+      class="results__table"
+    >
       <h2>{{ `Search results for '${query}'` }}</h2>
       <table>
         <thead>
@@ -88,9 +91,17 @@
     border: 1px solid var(--gray-color);
     //width needs to be specified because it is a flex child
     width: 100%;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
     &--empty {
       color: var(--gray-color);
+    }
+    &__table {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 1rem;
     }
   }
   td p {
@@ -105,6 +116,7 @@
     width: 3rem;
     display: block;
     margin: 1rem auto;
+    cursor: wait;
   }
   @keyframes spin {
     from {
