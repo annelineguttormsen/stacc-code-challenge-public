@@ -23,6 +23,7 @@
     padding: 5rem 1rem 1rem;
   }
   footer {
+    margin-bottom:2rem;
     ul {
       list-style-type: none;
       display: flex;
