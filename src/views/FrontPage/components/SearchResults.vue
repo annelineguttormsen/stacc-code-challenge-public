@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { defineProps } from 'vue'
-  import InputDangerAlert from "@/components/Input/Alert/InputDangerAlert.vue"
+  import InputWarningAlert from "@/components/Input/Alert/InputWarningAlert.vue"
 
   const props = defineProps({
     results: {
@@ -26,11 +26,11 @@
       aria-live="polite"
       aria-label="Loading search results"
       viewBox="0 0 24 24" height="1em" width="1em" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 3a9 9 0 0 1 9 9h-2a7 7 0 0 0-7-7V3z"></path></svg>
-    <InputDangerAlert 
+    <InputWarningAlert 
       v-if="results.length == 0 && !isLoading"
     >
       {{ `Couldn't find anything matching '${query}'` }}
-    </InputDangerAlert>
+    </InputWarningAlert>
     <div 
       v-else-if="results.length != 0 && !isLoading"
       class="results__table"
