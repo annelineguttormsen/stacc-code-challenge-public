@@ -14,12 +14,17 @@ html {
 h1 {
     font-size: 2.5rem;
     margin: 1.5rem 0;
-    line-height:1.2;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+    line-height: 1.2;
 }
 p {
     font-size: 1rem;
     margin: 1rem 0;
-    line-height:1.5;
+    line-height: 1.5;
 }
 table {
     border: 0;
@@ -53,5 +58,24 @@ tr {
 th, td {
     padding: 0.5rem 0.7rem;
     flex: 1;
+    word-break: break-word;
+}
+@media only screen and (max-width:480px) {
+    thead {
+        display: none;
+    }
+    tbody tr {
+        flex-flow: column nowrap;
+    }
+    td {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &::before {
+            content: attr(data-th);
+            display: inline-block;
+            font-weight: 600;
+            margin-right: 0.7rem;
+        }
+    }
 }
 @import 'variables'

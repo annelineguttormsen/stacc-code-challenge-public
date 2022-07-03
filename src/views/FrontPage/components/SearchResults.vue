@@ -15,12 +15,14 @@
 
 <template>
   <div class="results">
+    <h2>Resultater</h2>
     <p class="results--empty">Ingen tidligere søk</p>
-    <table>
+    <!--<table>
       <thead>
         <tr>
           <th>Navn</th>
           <th>Rolle</th>
+          <th>Land</th>
         </tr>
       </thead>
       <tbody>
@@ -28,11 +30,12 @@
           v-for="result in results"
           :key="result.caption"
         >
-          <td>{{ result.caption }}</td>
-          <td>{{ result.role }}</td>
+          <td data-th="Navn">{{ result.caption ?? '' }}</td>
+          <td data-th="Rolle">{{ result.role ?? ''}}</td>
+          <td data-th="Land">{{ result.country ?? ''}}</td>
         </tr>
       </tbody>      
-    </table>
+    </table>-->
   </div>
 </template>
 
