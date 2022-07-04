@@ -13,7 +13,7 @@
       required: true
     },
     error: {
-      type: String,
+      type: Number,
       required: false
     },
     query: {
