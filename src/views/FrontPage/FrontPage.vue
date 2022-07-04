@@ -15,6 +15,7 @@
   const finalSearchValue = ref('')
   const results = ref({})
   const isLoading = ref(false)
+  const error = ref()
 
   async function searchName(query) {
     router.push({
@@ -25,6 +26,7 @@
     isLoading.value = true
     const response = await fetchOpenSanctions(query)
     results.value = response.data
+    error.value = response.error
     finalSearchValue.value = query
     isLoading.value = false
   }
@@ -78,6 +80,7 @@
       :isLoading="isLoading"
       :results="results"
       :query="finalSearchValue"
+      :error="error"
     />
     <InfoAlert>
       PEP is the shorthand term for <i>politically exposed person</i> and is a person who is at a greater risk of corruption and/or being bribed. Because of this, customers who are flagged as <i>PEP</i> will be manually handled when it comes to something like setting up a loan with a bank.

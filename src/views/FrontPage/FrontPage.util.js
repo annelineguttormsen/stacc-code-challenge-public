@@ -5,17 +5,20 @@ export const fetchOpenSanctions = async (query) => {
     
     const state = {
         data: [],
-        hasError: false,
+        error: null
     };
     
     async function fetchResults() {
-        try {
-            const response = await axios.get(`https://api.opensanctions.org/search/default?limit=25&q=${query}&schema=Thing`);
-            state.data = response.data.results;
-        }
-        catch(e) {
-            state.hasError = true;
-        }
+        await axios.get(`https://api.opensanctions.org/search/default?limit=25&q=${query}&schema=Thing`)
+        // await axios.get("/foo")
+            .then((response) => {
+                state.data = response.data.results
+            })
+            .catch(function (error) {
+                if (error.response) {
+                    state.error = error.response.status;
+                }
+            });
     }
 
     await fetchResults();
