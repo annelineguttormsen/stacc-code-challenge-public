@@ -1,11 +1,11 @@
 <template>
-    <p class="dangeralert">
+    <p class="warningalert">
         <slot/>
     </p>
 </template>
 
 <style lang="scss" scoped>
-    .dangeralert {
+    .warningalert {
         padding: 0.5rem 1rem 0.5rem 2.5rem;
         margin: 0;
         border-radius: 2px;
